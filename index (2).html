@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Hosting & Domain</title>
+    <link rel="stylesheet" href="style (2).css">
+</head>
+<body>
+
+<header>
+    <div class="logo">EYBL Shop</div>
+    <nav>
+        <ul>
+            <li><a href="#" data-page="home">Home</a></li>
+            <li><a href="#" data-page="produk">Produk</a></li>
+            <li><a href="#" data-page="harga">Harga</a></li>
+            <li><a href="#" data-page="kontak">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= HALAMAN HOME ================= -->
+<section id="home" class="page active">
+    <h1>Selamat Datang di EYBL Shop</h1>
+    <p>Pusat layanan sepatu series EYBL terpercaya.</p>
+    <section id="home" class="page active">
+    <div class="gambar-sepatu">
+        <img src="eybl.webp" alt="Ecommerce Sepatu" width="1000" height="1000">
+    </div>
+</section>
+</section>
+
+<!-- ================= HALAMAN PRODUK ================= -->
+<section id="produk" class="page">
+    <h2>Produk Kami</h2>
+    <ul>
+        <li>kyrie EYBL</li>
+        <img src="kyrie eybl.webp" alt="E-Commerce">
+
+        <li>KOBE VIII</li>
+        <img src="kobe 88.webp" alt="E-Commerce">
+
+        <li>KOBE VI</li>
+        <img src="kobe 6.webp" alt="E-Commerce">
+    </ul>
+</section>
+
+<!-- ================= HALAMAN HARGA ================= -->
+<section id="harga" class="page">
+    <h2>Paket Harga</h2>
+   
+    <div class="harga-container">
+
+        <div class="harga-card">
+            <h3>kyrie</h3>
+            <p class="price">7.500.000</p>
+            <button class="btn-beli">Beli Sekarang</button>
+            <img src="kyrie eybl.webp" alt="E-Commerce">
+        </div>
+
+        <div class="harga-card">
+            <h3>KOBE VIII</h3>
+            <p class="price">9.200.000</p>
+            <button class="btn-beli">Beli Sekarang</button>
+            <img src="kobe 88.webp" alt="E-Commerce">
+        </div>
+
+        <div class="harga-card">
+            <h3>KOBE VI</h3>
+            <p class="price">14.500.000</p>
+            <button class="btn-beli">Beli Sekarang</button>
+            <img src="kobe 6.webp" alt="E-Commerce">
+        </div>
+
+   
+</section>
+
+<!-- ================= HALAMAN KONTAK ================= -->
+<section id="kontak" class="page">
+    <h2>Kontak Kami</h2>
+    <form>
+        <input type="text" placeholder="Nama">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Pesan"></textarea>
+        <button type="submit">Kirim</button>
+    </form>
+</section>
+
+<footer>
+    © 2025 EYBL Shop
+</footer>
+
+<script>
+    const navLinks = document.querySelectorAll("nav a");
+    const pages = document.querySelectorAll(".page");
+
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            let target = link.getAttribute("data-page");
+
+            pages.forEach(page => {
+                page.classList.remove("active");
+            });
+
+            document.getElementById(target).classList.add("active");
+        });
+    });
+</script>
+
+</body>
+</html>

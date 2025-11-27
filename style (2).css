@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header {
+    background: #0e63ff;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECTION = HALAMAN */
+.page {
+    display: none;
+    padding: 50px 40px;
+}
+
+.page.active {
+    display: block;
+}
+
+/* FORM */
+form {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 12px;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background: #0e63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: #0e63ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+
+    .gambar-sepatu {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.gambar-sepatu img {
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+}
